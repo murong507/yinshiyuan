@@ -1,0 +1,931 @@
+{
+//
+//回家地址 → https://zh.xhchannel.com/数字改
+//https://zh.xhchannel.com/
+//https://zh.xhamster.desi
+//https://zh.xhamster1.desi
+//https://zh.xhamster2.com
+//https://zh.xhamster19.com/
+"规则名": "xHamster-XYQHiker",
+"规则作者": "飞鱼",
+"请求头参数": "手机",
+"网页编码格式": "UTF-8",
+"图片是否需要代理": "0",
+"是否开启获取首页数据": "1",
+"首页推荐链接": "https://zh.xhamster1.desi",
+"首页列表数组规则": "article",
+"首页片单列表数组规则": "li:has(img)",
+"首页片单是否Jsoup写法": "1",
+"首页片单标题": "img&&alt",
+"首页片单链接": "a&&href",
+"首页片单图片": "img,1&&src",
+"首页片单副标题": "'⏱️️'+time&&Text+'▶️'+.video-thumb-views&&Text",
+"首页片单链接加前缀": "",
+"首页片单链接加后缀": "",
+"分类起始页码": "1",
+//"分类链接": "https://hscangku.com/vodshow/{cateId}-{catePg}/",
+"分类链接": "https://zh.xhamster1.desi/search/{cateId}?page={catePg}",
+"分类名称": "外媒丝袜&外媒主播&外媒综视&外媒视频&外媒公司&外媒系列&外媒影星&外媒影赏",
+"分类名称替换词": "丝袜&主播&国产&Stockings&Brazzers&My+First+Sex+Teacher&Julia+Ann&office",
+"分类截取模式": "1",
+"分类列表数组规则": ".video_block&&li:has(img)",
+"分类片单是否Jsoup写法": "1",
+"分类片单标题": "img&&alt",
+"分类片单链接": "a&&href",
+"分类片单图片": "img,1&&src",
+"分类片单副标题": "'⏱️️'+time&&Text+'▶️'+.video-thumb-views&&Text",
+
+"分类片单链接加前缀": "",
+"分类片单链接加后缀": "",
+"搜索请求头参数": "手机",
+"搜索链接": "https://zh.xhamster1.desi/search/{wd}",
+"POST请求数据": "",
+"搜索截取模式": "1",
+"搜索列表数组规则": ".video_block&&li:has(img)",
+"搜索片单是否Jsoup写法": "1",
+"搜索片单图片": "img,1&&src",
+"搜索片单标题": "img&&alt",
+"搜索片单链接": "a&&href",
+"搜索片单副标题": "'⏱️️'+time&&Text+'▶️'+.video-thumb-views&&Text",
+"搜索片单链接加前缀": "",
+"搜索片单链接加后缀": "",
+"链接是否直接播放": "1",
+"直接播放链接加前缀": "",
+"直接播放链接加后缀": "",
+"直接播放直链视频请求头": "",
+ "详情是否Jsoup写法":"0",
+    "类型详情": "影片分類:<span>&&</span>",
+    "年代详情": "更新時間:<span>&&</span>",
+    "地区详情": "",
+    "演员详情": "",
+    "简介详情": "",
+    "线路列表数组规则": "#initials-script",
+    "线路标题": "'📽️'+'JAV233'+'📺'",
+    "播放列表数组规则": "",
+    "选集列表数组规则": "url",
+    "选集标题链接是否Jsoup写法":"0",
+    "选集标题": "quality\":\"&&\"",
+    "选集链接": "\"url\":\"&&\"",
+    "是否反转选集序列": "0",
+    "选集链接加前缀": "https://zh.xhamster1.desi",
+    "选集链接加后缀": "",
+   
+"筛选数据":{
+"丝袜":[
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"丝袜视频","v":"丝袜"},
+{"n":"黑色丝袜","v":"黑色丝袜"},
+{"n":"肉色丝袜","v":"肉色丝袜"},
+{"n":"灰色丝袜","v":"灰色丝袜"},
+{"n":"渔网丝袜","v":"渔网丝袜"},
+{"n":"连裤丝袜","v":"连裤丝袜"},
+{"n":"过膝丝袜","v":"过膝丝袜"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"黑丝视频","v":"黑丝"},
+{"n":"巨乳视频","v":"中国巨乳"},
+{"n":"办公视频","v":"办公室"},
+{"n":"老师视频","v":"中国老师"},
+{"n":"妈妈视频","v":"中国妈妈"},
+{"n":"新娘视频","v":"中国新娘"},
+{"n":"空姐视频","v":"中国空姐"},
+{"n":"巨屌视频","v":"中国巨屌"}
+]
+}
+],
+"主播":[
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"网红主播","v":"网红主播"},
+{"n":"韩国主播","v":"韩国主播"},
+{"n":"欧美主播","v":"欧美主播"},
+{"n":"泰国主播","v":"泰国主播"},
+{"n":"印度主播","v":"印度主播"},
+{"n":"国产自拍","v":"国产自拍"},
+{"n":"韩国自拍","v":"韩国自拍"},
+{"n":"欧美自拍","v":"欧美自拍"},
+{"n":"泰国自拍","v":"泰国自拍"},
+{"n":"印度自拍","v":"印度自拍"}
+]
+}
+],
+"国产":[
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"中国国产","v":"国产"},
+{"n":"欧美视频","v":"欧美"},
+{"n":"日本视频","v":"日本"},
+{"n":"韩国视频","v":"韩国"},
+{"n":"亚洲视频","v":"亚洲"},
+{"n":"俄国视频","v":"俄国"},
+{"n":"英国视频","v":"英国"},
+{"n":"法国视频","v":"法国"},
+{"n":"德国视频","v":"德国"},
+{"n":"高清色片","v":"高清色情片"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"黑丝丝袜","v":"黑丝"},
+{"n":"女性高潮","v":"女性高潮"},
+{"n":"巨屌视频","v":"巨屌"},
+{"n":"潮吹视频","v":"潮吹"},
+{"n":"浪漫唯美","v":"浪漫唯美"},
+{"n":"熟女视频","v":"熟女"},
+{"n":"娇妻偷吃","v":"娇妻偷吃"},
+{"n":"麻豆传媒","v":"麻豆传媒"},
+{"n":"口交视频","v":"口交"},
+{"n":"大学美女","v":"大学生"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"校园视频","v":"校园"},
+{"n":"网红主播","v":"网红主播"},
+{"n":"角色扮演","v":"角色扮演"},
+{"n":"恋物癖影","v":"恋物癖"},
+{"n":"女同视频","v":"女同"},
+{"n":"扮演角色","v":"Cosplay"},
+{"n":"女性自慰","v":"女性自慰"},
+{"n":"素人视频","v":"素人"},
+{"n":"爆菊视频","v":"爆菊"},
+{"n":"三人视频","v":"3p"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"色情日漫","v":"日漫"},
+{"n":"女仆角色","v":"女仆"},
+{"n":"辣妈视频","v":"辣妈"},
+{"n":"成人卡通","v":"卡通"},
+{"n":"野战漏出","v":"野战漏出"},
+{"n":"老少视频","v":"老少配"},
+{"n":"内射中出","v":"内射中出"},
+{"n":"捆绑视频","v":"捆绑"},
+{"n":"多人群战","v":"多人"},
+{"n":"黑女视频","v":"黑人女"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"乱交群欢","v":"乱交群欢"},
+{"n":"合集视频","v":"合集"},
+{"n":"肥臀视频","v":"肥臀"},
+{"n":"风情少女","v":"风情少女"},
+{"n":"按摩视频","v":"按摩"},
+{"n":"粗暴性爱","v":"粗暴性爱"},
+{"n":"高潮射精","v":"射精"},
+{"n":"第一视角","v":"第一视角"},
+{"n":"试镜视频","v":"试镜"},
+{"n":"劲爆重味","v":"劲爆重味"},
+{"n":"手交视频","v":"手交"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"舔屄视频","v":"舔屄"},
+{"n":"撒尿视频","v":"撒尿"},
+{"n":"性爱玩具","v":"性玩具"},
+{"n":"集体颜射","v":"集体颜射"},
+{"n":"聚会性爱","v":"聚会"},
+{"n":"虚拟现实","v":"虚拟现实"},
+{"n":"片场直击","v":"片场直击"},
+{"n":"脱衣舞娘","v":"脱衣舞"},
+{"n":"人妖系列","v":"人妖系列"},
+{"n":"肌肉猛男","v":"肌肉男"},
+{"n":"双性恋男","v":"双性恋男"}
+]
+}
+],
+"Stockings":[
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"丝袜色情","v":"Stockings"},
+{"n":"丝袜色情","v":"Black stockings"},
+{"n":"黑丝性爱","v":"黑丝"},
+{"n":"成人动漫","v":"anime"},
+{"n":"色情动漫","v":"anime hentai"},
+{"n":"国产麻豆","v":"麻豆"},
+{"n":"国产视频","v":"china"},
+{"n":"中文色情","v":"chinese"},
+{"n":"美女自慰","v":"自慰"},
+{"n":"亚洲视频","v":"Asian Woman"},
+{"n":"颜值美女","v":"fake tits"},
+{"n":"欧美视频","v":"Euro"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"欧美色情","v":"Euro porn"},
+{"n":"欧美性爱","v":"Eurobabe"},
+{"n":"欧美故事","v":"European"},
+{"n":"欧美成人","v":"European porn"},
+{"n":"欧美短片","v":"Eurosex"},
+{"n":"韩国视频","v":"Korea"},
+{"n":"韩国色情","v":"korean"},
+{"n":"日本视频","v":"japan"},
+{"n":"日本色情","v":"Japanese"},
+{"n":"泰国视频","v":"Thailand"},
+{"n":"泰国色情","v":"Thai"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"俄罗斯色","v":"Russian"},
+{"n":"法国视频","v":"France"},
+{"n":"法国色情","v":"French"},
+{"n":"德国视频","v":"German"},
+{"n":"印度视频","v":"indian"},
+{"n":"印度色情","v":"indian sex"},
+{"n":"阿拉伯影","v":"arab"},
+{"n":"阿拉伯色","v":"arab cock"},
+{"n":"潮吹视频","v":"squirt"},
+{"n":"潮吹中的","v":"squirting"},
+{"n":"潮吹喷水","v":"squirters"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"大奶色情","v":"Big_Tits 23"},
+{"n":"大奶视频","v":"big boobs"},
+{"n":"巨乳色情","v":"Big breasts"},
+{"n":"巨乳视频","v":"Huge breasts"},
+{"n":"巨大乳房","v":"Huge boobs"},
+{"n":"巨乳性爱","v":"huge tits"},
+{"n":"巨乳屁股","v":"Huge ass"},
+{"n":"大屌视频","v":"Big Cock"},
+{"n":"大屌色情","v":"huge cock"},
+{"n":"大屌性爱","v":"huge dick"},
+{"n":"家庭主妇","v":"housewife"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"人妻妻子","v":"wife"},
+{"n":"人妻性爱","v":"cheating wife"},
+{"n":"热辣妻子","v":"hot wife"},
+{"n":"热辣人妻","v":"hotwife"},
+{"n":"人妻色情","v":"I Have Wife"},
+{"n":"妻子性爱","v":"real wife"},
+{"n":"看好妻子","v":"Your wife"},
+{"n":"淫荡妻子","v":"my wife"},
+{"n":"人妻性爱","v":"cheating wife"},
+{"n":"预约性爱","v":"tonights girlfriend"},
+{"n":"美女老板","v":"boss"},
+{"n":"老板被草","v":"fucks boss"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"老板性爱","v":"sex boss"},
+{"n":"我的老板","v":"my boss"},
+{"n":"工作时间","v":"work"},
+{"n":"色情工作","v":"fucks work"},
+{"n":"色办公室","v":"office"},
+{"n":"爱办公室","v":"office fuck"},
+{"n":"性办公室","v":"office sex"},
+{"n":"医生视频","v":"doctor"},
+{"n":"护士视频","v":"nurse"},
+{"n":"制服视频","v":"uniform"},
+{"n":"老师视频","v":"teacher"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"老师性爱","v":"Sex Teacher"},
+{"n":"老师被草","v":"fucks teacher"},
+{"n":"性爱学校","v":"School"},
+{"n":"学校性爱","v":"Classroom"},
+{"n":"性感老师","v":"School teacher"},
+{"n":"新娘视频","v":"wedding"},
+{"n":"新娘结婚","v":"bride"},
+{"n":"空姐视频","v":"stewardess"},
+{"n":"空中小姐","v":"air hostess"},
+{"n":"继母视频","v":"Step Mom"},
+{"n":"人妻妈妈","v":"mommy"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"妈妈性爱","v":"moms"},
+{"n":"朋友妈妈","v":"hot mom"},
+{"n":"看好妈妈","v":"Your Mom"},
+{"n":"异族视频","v":"interracial"},
+{"n":"异族性爱","v":"Interracial sex"},
+{"n":"家庭性爱","v":"Family"},
+{"n":"家庭色情","v":"Family porn"},
+{"n":"家庭性壹","v":"family rolepla"},
+{"n":"家庭性贰","v":"Family sex"},
+{"n":"家庭性叁","v":"Family taboo"},
+{"n":"家庭性肆","v":"fucked up Family"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"家庭性伍","v":"step Family"},
+{"n":"家庭性陆","v":"stepFamily"},
+{"n":"家庭性柒","v":"toobo Family"},
+{"n":"拳交视频","v":"Fisting"},
+{"n":"拳交性爱","v":"pussy Fisting"},
+{"n":"摄像偷拍","v":"Cam"},
+{"n":"摄像头色","v":"Camshow"},
+{"n":"摄像自拍","v":"Camsex"},
+{"n":"一对一的","v":"1 on 1"},
+{"n":"一对二的","v":"1 on 2"},
+{"n":"同时娱乐","v":"Same Time"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"三人行的","v":"3p"},
+{"n":"群众娱乐","v":"Group"},
+{"n":"预约上门","v":"tonights"},
+{"n":"享受按摩","v":"Massage"}
+]
+}
+],
+"Brazzers":[
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Brazzers","v":"Brazzers"},
+{"n":"Naughty America","v":"Naughty-America"},
+{"n":"Marc Dorcel","v":"Marc Dorcel"},
+{"n":"dorcelclub","v":"Dorcelclub"},
+{"n":"Digital","v":"Digital"},
+{"n":"Digital Playgrounds","v":"digital playgrounds"},
+{"n":"Wicked","v":"Wicked"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Pornfidelity","v":"Pornfidelity"},
+{"n":"Elegantangel","v":"elegantangel"},
+{"n":"Private","v":"Private"},
+{"n":"Vivid","v":"Vivid"},
+{"n":"Big Tits","v":"Big-Tits"},
+{"n":"MILF","v":"MILF"},
+{"n":"Fake Taxi","v":"Fake-Taxi"},
+{"n":"Family Strokes","v":"Family-Strokes"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Reality Kings","v":"Reality-Kings"},
+{"n":"Mix","v":"Mix"},
+{"n":"Bang Bross","v":"Bang-Bross"},
+{"n":"TeamSkett","v":"TeamSkett"},
+{"n":"Evil Angel","v":"Evil-Angel"},
+{"n":"Mylf","v":"Mylfl"},
+{"n":"Anal","v":"Anal"},
+{"n":"Private","v":"Private"},
+{"n":"Sex Art","v":"Sex-Art"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Plumper Pass","v":"Plumper-Pass"},
+{"n":"Bang","v":"Bang"},
+{"n":"Mofos","v":"Mofos"},
+{"n":"Ddf Network","v":"Ddf-Network"},
+{"n":"Playboy Plus","v":"Playboy-Plus"},
+{"n":"Shoplyfter","v":"Shoplyfter"},
+{"n":"Glory Hole","v":"Glory-Hole"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Cherry Pimps","v":"Cherry-Pimps"},
+{"n":"Big Ass","v":"Big-Ass"},
+{"n":"Public Agent","v":"Public-Agent"},
+{"n":"Blacked Raw","v":"Blacked-Raw"},
+{"n":"Threesome","v":"Threesome"},
+{"n":"Blacked","v":"Blacked"},
+{"n":"Throated","v":"Throated"},
+{"n":"TushyRaw","v":"TushyRaw"}
+]
+}
+],
+"My+First+Sex+Teacher":[
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"My First Sex Teacher","v":"My First Sex Teacher"},
+{"n":"Tonight's Fuck","v":"Tonight's Fuck"},
+{"n":"My Friend's Hot Mom","v":"My Friend's Hot Mom"},
+{"n":"Naughty Office","v":"Naughty Office"},
+{"n":"Big Cock Hero","v":"Big Cock Hero"},
+{"n":"Seduced By A Cougar","v":"Seduced By A Cougar"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Dirty Wives Club","v":"Dirty Wives Club"},
+{"n":"I Have a Wife","v":"I Have a Wife"},
+{"n":"Housewife 1 on 1","v":"Housewife 1 on 1"},
+{"n":"My Wife's Hot Friend","v":"My Wife's Hot Friend"},
+{"n":"My Girlfriend's Busty Friend","v":"My Girlfriend's Busty Friend"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"American Daydreams","v":"American Daydreams"},
+{"n":"Diary of a Milf","v":"Diary of a Milf"},
+{"n":"Big Tits At Work","v":"Big Tits At Work"},
+{"n":"Doctor Adventures","v":"Doctor Adventures"},
+{"n":"Big Tits At School","v":"Big Tits At School"},
+{"n":"Real Wife Stories","v":"Real Wife Stories"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Moms In Control","v":"Moms In Control"},
+{"n":"Milfs Like It Big","v":"Milfs Like It Big"},
+{"n":"Mommy Got Boobs","v":"Mommy Got Boobs"},
+{"n":"She'S Gonna Squirt","v":"She'S Gonna Squirt"},
+{"n":"Dirty Masseur","v":"Dirty Masseur"},
+{"n":"Big Wet Butts","v":"Big Wet Butts"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Day With A Pornstar","v":"Day With A Pornstar"},
+{"n":"Pornstars Like It Big","v":"Pornstars Like It Big"},
+{"n":"Giant cock","v":"Giant cock"},
+{"n":"Super cock","v":"Super cock"},
+{"n":"Super big cock","v":"Super big cock"},
+{"n":"Big cock","v":"Big cock"}
+]
+}
+],
+"Julia+Ann":[
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Julia Ann","v":"Julia Ann"},
+{"n":"Veronica Avluv","v":"Veronica Avluv"},
+{"n":"Cytherea","v":"Cytherea"},
+{"n":"Ariella Ferrera","v":"Ariella Ferrera"},
+{"n":"Jasmine Jae","v":"Jasmine Jae"},
+{"n":"mariska","v":"mariska"},
+{"n":"Anna Polina","v":"Anna Polina"},
+{"n":"Anissa Kat","v":"Anissa Kat"},
+{"n":"Melissa Lauren","v":"Melissa Lauren"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Ania Kinski","v":"Ania Kinski"},
+{"n":"Tarra White","v":"Tarra White"},
+{"n":"Liza Del Sierra","v":"Liza Del Sierra"},
+{"n":"Nelly Kent","v":"Nelly Kent"},
+{"n":"Mailyne","v":"Mailyne"},
+{"n":"Amber Jayne","v":"Amber Jayne"},
+{"n":"Rebecca More","v":"Rebecca More"},
+{"n":"Clanddi Jinkcego","v":"Clanddi Jinkcego"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Sensual Jane","v":"Sensual Jane"},
+{"n":"Emma Leigh","v":"Emma Leigh"},
+{"n":"Victoria Summers","v":"Victoria Summers"},
+{"n":"Ava Addams","v":"Ava Addams"},
+{"n":"Lisa Ann","v":"Lisa Ann"},
+{"n":"Kendra Lust","v":"Kendra Lust"},
+{"n":"Nikki Benz","v":"Nikki Benz"},
+{"n":"Diamond Foxxx","v":"Diamond Foxxx"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Alanah Rae","v":"Alanah Rae"},
+{"n":"Angela White","v":"Angela White"},
+{"n":"Amy Anderssen","v":"Amy Anderssen"},
+{"n":"AluraTNTJenson","v":"AluraTNTJenson"},
+{"n":"Anna Polina","v":"Anna Polina"},
+{"n":"Eva Notty","v":"Eva Notty"},
+{"n":"Sophie Dee","v":"Sophie Dee"},
+{"n":"Alura Jenson","v":"Alura Jenson"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Reagan Foxx","v":"Reagan Foxx"},
+{"n":"Katie Kox","v":"Katie Kox"},
+{"n":"Carmella Bing","v":"Carmella Bing"},
+{"n":"Shyla Stylez","v":"Shyla Stylez"},
+{"n":"McKenzie Lee","v":"McKenzie Lee"},
+{"n":"Gianna Michaels","v":"Gianna Michaels"},
+{"n":"Alexis Fawx","v":"Alexis Fawx"},
+{"n":"Mellanie Monroe","v":"Mellanie Monroe"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Hunter Bryce","v":"Hunter Bryce"},
+{"n":"Richelle Ryan","v":"Richelle Ryan"},
+{"n":"Katsuni","v":"Katsuni"},
+{"n":"Aletta Ocean","v":"Aletta Ocean"},
+{"n":"Rachel Love","v":"Rachel Love"},
+{"n":"Sandee Westgate","v":"Sandee Westgate"},
+{"n":"Lacie James","v":"Lacie James"},
+{"n":"Corinna Blake","v":"Corinna Blake"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Sheridan Love","v":"Sheridan Love"},
+{"n":"Kayla Kleevage","v":"Kayla Kleevage"},
+{"n":"Penny Porsche","v":"Penny Porsche"},
+{"n":"Lauren Phillips","v":"Lauren Phillips"},
+{"n":"Echo Valley","v":"Echo Valley"},
+{"n":"Kandi Cox","v":"Kandi Cox"},
+{"n":"Emily Addison","v":"Emily Addison"},
+{"n":"Friday","v":"Friday"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Veronica Vain","v":"Veronica Vain"},
+{"n":"Maya Divine","v":"Maya Divine"},
+{"n":"Angelica Sin","v":"Angelica Sin"},
+{"n":"Penelope Piper","v":"Penelope Piper"},
+{"n":"Nina Mercedez","v":"Nina Mercedez"},
+{"n":"Kiara Mia","v":"Kiara Mia"},
+{"n":"Alexa Pierce","v":"Alexa Pierce"},
+{"n":"Tarra White","v":"Tarra White"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Summer Sinn","v":"Summer Sinn"},
+{"n":"Ryan Conner","v":"Ryan Conner"},
+{"n":"August Taylor","v":"August Taylor"},
+{"n":"Darling Danika","v":"Darling Danika"},
+{"n":"Michelle McLaren","v":"Michelle McLaren"},
+{"n":"Abby Rode","v":"Abby Rode"},
+{"n":"Sybil Stallone","v":"Sybil Stallone"},
+{"n":"Farrah Dahl","v":"Farrah Dahl"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Felony Foreplay","v":"Felony Foreplay"},
+{"n":"Parker Swayze","v":"Parker Swayze"},
+{"n":"Alena Croft","v":"Alena Croft"},
+{"n":"Chloe Reece Ryder","v":"Chloe Reece Ryder"},
+{"n":"Harmony Bliss","v":"Harmony Bliss"},
+{"n":"Tyann Mason","v":"Tyann Mason"},
+{"n":"Lya Pink","v":"Lya Pink"},
+{"n":"Olivia Parrish","v":"Olivia Parrish"},
+{"n":"Maggie Green","v":"Maggie Green"},
+{"n":"Lexi Carrington","v":"Lexi Carrington"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Diane Diamonds","v":"Diane Diamonds"},
+{"n":"Milan","v":"Milan"},
+{"n":"Ryan Keely","v":"Ryan Keely"},
+{"n":"Wanda Lust","v":"Wanda Lust"},
+{"n":"Angelica Raven","v":"Angelica Raven"},
+{"n":"Brittanie Lane","v":"Brittanie Lane"},
+{"n":"Sindi Star","v":"Sindi Star"},
+{"n":"Eden","v":"Eden"},
+{"n":"Mz Berlin","v":"Mz Berlin"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Yasmin Scott","v":"Yasmin Scott"},
+{"n":"Lauren Kain","v":"Lauren Kain"},
+{"n":"Tegan James","v":"Tegan James"},
+{"n":"Jennifer Best","v":"Jennifer Best"},
+{"n":"Melissa Lauren","v":"Melissa Lauren"},
+{"n":"Mia Ryder","v":"Mia Ryder"},
+{"n":"London Belle","v":"London Belle"},
+{"n":"Keisha","v":"Keisha"},
+{"n":"Kitty Lee","v":"Kitty Lee"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Kayla Kupcakes","v":"Kayla Kupcakes"},
+{"n":"Jessyca Wilson","v":"Jessyca Wilson"},
+{"n":"Jackie Wood","v":"Jackie Wood"},
+{"n":"Lynn LeMay","v":"Lynn LeMay"},
+{"n":"Maci Maguire","v":"Maci Maguire"},
+{"n":"Victoria Summers","v":"Victoria Summers"},
+{"n":"Kayla Green","v":"Kayla Green"},
+{"n":"Lexi Luna","v":"Lexi Luna"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Chloe Surreal","v":"Chloe Surreal"},
+{"n":"Olivia Stark","v":"Olivia Stark"},
+{"n":"Hot Ass Hollywood","v":"Hot Ass Hollywood"},
+{"n":"Lila Lovely","v":"Lila Lovely"},
+{"n":"Kayley Gunner","v":"Kayley Gunner"},
+{"n":"Payton Preslee","v":"Payton Preslee"}
+]
+}
+],
+"office":[
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Office","v":"office"},
+{"n":"office sex","v":"Office sex"},
+{"n":"Office squirt","v":"office squirt"},
+{"n":"Office boss","v":"office boss"},
+{"n":"Office work","v":"office work"},
+{"n":"Office slut","v":"office slut"},
+{"n":"Office fuck","v":"office fuck"},
+{"n":"Office secretary","v":"office secretary"},
+{"n":"Office milf","v":"office milf"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Office porn","v":"office porn"},
+{"n":"Office socks","v":"office socks"},
+{"n":"Office roleplay","v":"office roleplay"},
+{"n":"Office mature","v":"office mature"},
+{"n":"Office busty","v":"office busty"},
+{"n":"Office anal","v":"office anal"},
+{"n":"Office assistant","v":"office assistant"},
+{"n":"Office boy","v":"office boy"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Office chair","v":"office chair"},
+{"n":"Office clerk","v":"office clerk"},
+{"n":"Office clothes","v":"office clothes"},
+{"n":"Office desk","v":"office desk"},
+{"n":"Office domination","v":"office domination"},
+{"n":"Office fantasies","v":"office fantasies"},
+{"n":"Office fantasy","v":"office fantasy"},
+{"n":"Office girl","v":"office girl"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Office girls","v":"office girls"},
+{"n":"Office handjob","v":"office handjob"},
+{"n":"Office lady","v":"office lady"},
+{"n":"Office lady porn","v":"office lady porn"},
+{"n":"Office man","v":"office man"},
+{"n":"Office masturbation","v":"office masturbation"},
+{"n":"Office milf","v":"office milf"},
+{"n":"Office outfit","v":"office outfit"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Office whore","v":"office whore"},
+{"n":"Work","v":"work"},
+{"n":"boss","v":"Boss"},
+{"n":"My Boss","v":"my boss"},
+{"n":"My sex boss","v":"My sex boss"},
+{"n":"Mom","v":"Mom"},
+{"n":"Moms","v":"moms"},
+{"n":"Momma","v":"momma"},
+{"n":"mommy","v":"mommy"},
+{"n":"Mommydomme","v":"mommydomme"},
+{"n":"My mom","v":"My mom"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Friend mom","v":"Friend mom"},
+{"n":"Sex moms","v":"sex moms"},
+{"n":"Momsteachsex","v":"momsteachsex"},
+{"n":"Moms teach sex","v":"moms teach sex"},
+{"n":"Moms teaching teens","v":"moms teaching teens"},
+{"n":"Mom pantyhose","v":"mom pantyhose"},
+{"n":"Mom big breasts","v":"Mom big breasts"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Moms big tits","v":"Moms big tits"},
+{"n":"mom and boyfriend","v":"mom and boyfriend"},
+{"n":"Mom boy","v":"mom boy"},
+{"n":"Mom creampie","v":"mom creampie"},
+{"n":"Mom gangbang","v":"mom gangbang"},
+{"n":"Mom husband","v":"mom husband"},
+{"n":"Mom in law","v":"mom in law"},
+{"n":"Mom nylon","v":"mom nylon"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Mom porn","v":"mom porn"},
+{"n":"mom pov","v":"Mom pov"},
+{"n":"Mom pussy","v":"mom pussy"},
+{"n":"Mom shares bed","v":"mom shares bed"},
+{"n":"Mom tights","v":"mom tights"},
+{"n":"Mommy joi","v":"mommy joi"},
+{"n":"Momswap","v":"momswap"},
+{"n":"teaches","v":"Teaches"},
+{"n":"Teacher","v":"Teacher"},
+{"n":"Teachers","v":"teachers"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"My teacher","v":"My teacher"},
+{"n":"Sex Teacher","v":"sex teacher"},
+{"n":"Teacher sex","v":"teacher sex"},
+{"n":"teaching","v":"teaching"},
+{"n":"Teacher fetish","v":"teacher fetish"},
+{"n":"Teacher student","v":"teacher student"},
+{"n":"teacher and student","v":"teacher and student"},
+{"n":"Teacher porn","v":"teacher porn"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Teacher porn videos","v":"teacher porn videos"},
+{"n":"Teacher fucks student","v":"teacher fucks student"},
+{"n":"Teacher student sex","v":"teacher student sex"},
+{"n":"Teaching sex","v":"teaching sex"},
+{"n":"Boobs","v":"boobs"},
+{"n":"Big boobs","v":"big boobs"},
+{"n":"Boobs tits","v":"Boobs tits"},
+{"n":"Airlines","v":"Airlines"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Stewardess","v":"stewardess"},
+{"n":"Air Hostess","v":"air hostess"},
+{"n":"Wedding","v":"wedding"},
+{"n":"Wedding sex","v":"wedding sex"},
+{"n":"bride","v":"bride"},
+{"n":"Wedding brides","v":"Wedding brides"},
+{"n":"Wedding day","v":"wedding day"},
+{"n":"Wedding dress","v":"wedding dress"},
+{"n":"Wedding night","v":"wedding night"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Wedding ring","v":"wedding ring"},
+{"n":"Doctor","v":"Doctor"},
+{"n":"Doctors","v":"doctors"},
+{"n":"Doctors office","v":"doctors office"},
+{"n":"Sex doctor","v":"Sex doctor"},
+{"n":"Doctor sex","v":"doctor sex"},
+{"n":"Doctor porn","v":"doctor porn"},
+{"n":"Doctor and patient","v":"doctor and patient"},
+{"n":"Doctora","v":"doctora"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Doctor blowjob","v":"doctor blowjob"},
+{"n":"Doctor fucks patient","v":"doctor fucks patient"},
+{"n":"Doctor patient","v":"doctor patient"},
+{"n":"nurse","v":"nurse"},
+{"n":"Sex nurse","v":"sex nurse"},
+{"n":"School","v":"School"},
+{"n":"School uniform","v":"school-uniform"},
+{"n":"Sexy star","v":"sexy star"},
+{"n":"Superstar","v":"superstar"}
+]
+},
+{
+"key":"cateId",
+"name":"全部分类",
+"value":[
+{"n":"Maid","v":"maid"},
+{"n":"maids","v":"maids"},
+{"n":"Maid sex","v":"maid-sex"},
+{"n":"Sex maid","v":"sex maid"},
+{"n":"Squirting","v":"Squirting"},
+{"n":"Squirt","v":"Squirt"}]}
+]
+
+
+},
+
+"分析MacPlayer": "0",
+"是否开启手动嗅探": "1",
+"手动嗅探视频链接关键词": ".m3u8#.mp4",
+"手动嗅探视频链接过滤词": "baidu.com"
+}
